@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 import startFetching from './app';
 dotenv.config();
 
-const providerUrl = `${process.env.ALCHEMY_URL_HTTPS}/${process.env.ALCHEMY_APIKEY}`;
+const providerUrl = `${process.env.PROVIDER_URL_HTTPS}/${process.env.PROVIDER_APIKEY}`;
 const web3 = new Web3(providerUrl);
 
 async function main() {

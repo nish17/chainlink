@@ -3,10 +3,12 @@
     "rootDir": ".",
     "outDir": "build",
     "target": "ES6",
+    "sourceMap": true,
     "module": "CommonJS",
     "resolveJsonModule": true,
     "strictNullChecks": true,
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "lib": ["ES2020"]
   },
   "include": ["src/**/*.ts", "test/**/*.ts"]
 }

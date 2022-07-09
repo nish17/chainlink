@@ -16,8 +16,7 @@ $ npm start
 - We can also run a local private blockchain using Ganache.
 
 ## ❗Known Issues
-- Because of the nature of Promise.all(), the whole fetch result fails if any one of the network request for asset price is failing.
-- The price we are getting is not in decimal form.
+- Promise.all may create issues because of its nature.
 
 ## ❤️ Credits
 
