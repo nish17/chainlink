@@ -4,7 +4,7 @@ import {PROXISES} from './constants';
 import {Crypto, IPrice} from './types';
 import {getAssetPriceOf, prettyPrintResult} from './utils';
 
-const INTERVAL = 5000;
+const INTERVAL = process.env.INTERVAL || 5000; // in milliseconds
 async function fetchPrices(web3: Web3): Promise<void> {
   try {
     const Promises = Object.entries(PROXISES).map(async entry => {
@@ -20,5 +20,5 @@ async function fetchPrices(web3: Web3): Promise<void> {
 
 export default async function startFetching(web3: Web3) {
   await fetchPrices(web3);
-  setInterval(async () => await fetchPrices(web3), INTERVAL);
+  setInterval(async () => await fetchPrices(web3), INTERVAL as number);
 }
