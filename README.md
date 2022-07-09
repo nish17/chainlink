@@ -11,11 +11,11 @@ $ npm install
 $ npm start
 ```
 
-### Learnings?
+## 🧠 Learnings?
 - web3 providers gives us the ability to interact with the Blockchain Node. I started experimenting using Infura which was based on ethereum, but as I was curious about Polygon, then moved to Alchemy, which gives the polygon mainnet provider.
 - We can also run a local private blockchain using Ganache.
 
-### Known Issues
+## ❗Known Issues
 - Because of the nature of Promise.all(), the whole fetch result fails if any one of the network request for asset price is failing.
 - The price we are getting is not in decimal form.
 
